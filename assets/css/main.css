@@ -62,7 +62,7 @@
 .jn-work .work-item a:first-child:before{position: relative;top: 25px; left: -50px;font-family: var(--font-en);font-size: 14px;content:"(0"counter(number)")";counter-increment:number;}
 .jn-work .work-item a:first-child:hover{padding: 106px 40px 120px 80px;background: linear-gradient(90deg, rgba(255,255,255,0.1) 80%, transparent 100%);}
 .jn-work .img-box{ display: none;}
-.jn-work .title{font-family: var(--font-en);font-size: 55px;font-weight: 500;text-transform: uppercase;}
+.jn-work .title{font-family: var(--font-en);font-size: 70px;font-weight: 500;text-transform: uppercase;}
 .jn-work .title span{font-size: 36px;}
 .jn-work .desc{margin-top: 50px;line-height: 24px;}
 .jn-work .hash{margin-top: 15px;font-size: 14px;font-weight: 300;color: rgba(255,255,255,0.6);letter-spacing: normal;}
