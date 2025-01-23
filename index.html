@@ -2,329 +2,299 @@
 <html lang="ko">
 <head>
     <meta charset="UTF-8">
-    <title>포트폴리오 재정비중</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+    <title>PORTFOLIO</title>
 
-    <link rel="stylesheet" href="/assets/css/common.css">
-    <link rel="stylesheet" href="/assets/css/catchan.css">
+    <link rel="stylesheet" href="/assets/css/layout.css">
+    <link rel="stylesheet" href="/assets/css/main.css">
 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
     <script src="/assets/js/jquery-3.6.0.min.js"></script>
-    <script src="/assets/js/catchan.js"></script>
+    <script src="/assets/js/main.js" defer></script>
 </head>
+
 <body>
-    <div class="wrap">
-        <!-- header -->
-        <header>
-            <div class="header">
-                <h1><a href="#"><img src="https://ifh.cc/g/hvmfsz.png" alt="캐치안 로고 이미지"></a></h1>
-                <nav>
-                    <ul>
-                        <li><a href="#me">Me</a></li>
-                        <li><a href="#work">Portfolio</a></li>
-                        <li><a href="#">Place</a></li>
-                    </ul>
-                </nav>
+<div class="wrapper">
+    <header class="header">
+        <h1 class="logo"><a href="#">Catch-An</a></h1>
+        <button id="gnbToggle" class="open"></button>
+        <aside class="gnb-wrapper">
+            <h2 class="blind">메뉴 열림</h2>
+            <div class="area-1">
+                <P>How To Contact:</P>
+                <p>
+                    Phone:<br>
+                    +82 010-2643-7088<br>
+                    E-mail:<br>
+                    pkirby0426@gmail.com
+                </p>
             </div>
-        </header>
-
-        <!-- main banner -->
-        <section id="mainBanner">
-            <article class="main_banner_wrap">
-                <div class="main_banner">
-                    <ul>
-                        <li>
-                            <div class="main_tit">I create Memorable<br>Better Website</div>
-
-                            <div class="main_clear_box">
-                                <ul>
-                                    <li>Hello</li>
-                                    <li>My Name</li>
-                                    <li>is Jian</li>
-                                </ul>
-                                <div class="emotion_box">
-                                    <div class="sub_tit">Today Emotion</div>
-                                    <div class="main_tit">Today's Emotions :<br><span class="fw-700">Happiness</span></div>
-                                    <div class="emotion_img"><img src="https://ifh.cc/g/Y1AGhw.png" alt="행복함을 표현하는 이미지"></div>
-                                </div>
-                            </div>
-                        </li>
-                    </ul>
+            <div class="area-2">
+                <ul class="nav-list">
+                    <li class="nav-item"><a class="nav" href="#home">HOME <span aria-hidden="true">HOME</span></a></li>
+                    <li class="nav-item"><a class="nav" href="#about">ABOUT<span aria-hidden="true">ABOUT</span></a></li>
+                    <li class="nav-item"><a class="nav" href="#works">WORKS<span aria-hidden="true">WORKS</span></a></li>
+                    <li class="nav-item"><a class="nav" href="#goal">GOAL<span aria-hidden="true">GOAL</span></a></li>
+                </ul>
+            </div>
+            <div class="area-3">
+                <div class="marquee">
+                    <span>WEB PUBLISHER </span>
+                    <span>WEB PUBLISHER </span>
+                    <span>WEB PUBLISHER </span>
                 </div>
-            </article>
-        </section>
+            </div>
+            <div class="area-4"></div>
+        </aside>
+    </header>
 
-        <div class="gap"></div>
-
-        <!-- Me -->
-        <section id="me">
-
-            <!-- 간단한 자기소개 -->
-            <article class="my_word">
-                <ul>
-                    <li></li>
-                    <li>
-                        <h2 class="fw-700">배움을 멈추는 순간,<br>성장도 멈춘다는 마음으로 일합니다.</h2>
-                        <p>
-
-                        </p>
-                    </li>
-                </ul>
-            </article>
-
-            <div class="gap"></div>
-
-            <!-- 프로필 -->
-            <article>
-
-            </article>
-        </section>
-
-        <div class="gap"></div>
-
-        <div style="padding: 10px 0; width: 100%; font-size: 13px; line-height: 1.4; color: #fff; text-align: center; background-color: #111; ">Quick View는 작업중이라 작동되지 않습니다.<br>사이트 이동은 우측 상단의 이동 버튼으로 이용 부탁드립니다 :)</div>
-
-        <!-- 작업물 팝업존 -->
-        <section id="work">
-             <!-- 한국 엡손 작업물 -->
-            <article class="epson">
-                <h2>EPSON KOREA</h2>
-                <ul>
-                    <li>
-                        <div class="work_bar">
-                            <h3 class="fw-500">{ 엡손라운지 }</h3>
-                            <a href="https://epsonlounge.co.kr/" target="_blank" class="arrow_btn"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#fff"><path d="m256-240-56-56 384-384H240v-80h480v480h-80v-344L256-240Z"/></svg></a>
-                        </div>
-                        <div class="thumb">
-                            <img src="https://ifh.cc/g/KAM90x.png" alt="엡손라운지소개 썸네일 이미지">
-                            <div class="view">Quick View</div>
-                        </div>
-                    </li>
-
-                    <li>
-                        <div class="work_bar">
-                            <h3 class="fw-500">{ 제품 구매가이드 }</h3>
-                            <a href="https://epsonlounge.co.kr/shop/page.html?id=34" target="_blank" class="arrow_btn"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#fff"><path d="m256-240-56-56 384-384H240v-80h480v480h-80v-344L256-240Z"/></svg></a>
-                        </div>
-                        <div class="thumb">
-                            <img src="https://ifh.cc/g/jA76qN.jpg" alt="제품 구매가이드 썸네일 이미지">
-                            <div class="view">Quick View</div>
-                        </div>
-                    </li>
-
-                    <li>
-                        <div class="work_bar">
-                            <h3 class="fw-500">{ 어플리케이션 다운로드 }</h3>
-                            <a href="https://epsonlounge.co.kr/shop/page.html?id=35" target="_blank" class="arrow_btn"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#fff"><path d="m256-240-56-56 384-384H240v-80h480v480h-80v-344L256-240Z"/></svg></a>
-                        </div>
-                        <div class="thumb">
-                            <img src="https://ifh.cc/g/rLYQC2.jpg" alt="어플리케이션 다운로드 페이지 썸네일 이미지">
-                            <div class="view">Quick View</div>
-                        </div>
-                    </li>
-
-                    <li>
-                        <div class="work_bar">
-                            <h3 class="fw-500">{ 이용약관/개인정보처리방침 }</h3>
-                            <a href="https://epsonlounge.co.kr/shop/page.html?id=36" target="_blank" class="arrow_btn"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#fff"><path d="m256-240-56-56 384-384H240v-80h480v480h-80v-344L256-240Z"/></svg></a>
-                        </div>
-                        <div class="thumb">
-                            <img src="https://ifh.cc/g/5OOlaW.jpg" alt="이용약관 썸네일 이미지">
-                            <div class="view">Quick View</div>
-                        </div>
-                    </li>
-
-                    <li>
-                        <div class="work_bar">
-                            <h3 class="fw-500">{ 엡손라운지 소개 }</h3>
-                            <a href="https://epsonlounge.co.kr/shop/page.html?id=32" target="_blank" class="arrow_btn"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#fff"><path d="m256-240-56-56 384-384H240v-80h480v480h-80v-344L256-240Z"/></svg></a>
-                        </div>
-                        <div class="thumb">
-                            <img src="https://ifh.cc/g/LLn2wy.jpg" alt="엡손라운지소개 썸네일 이미지">
-                            <div class="view">Quick View</div>
-                        </div>
-                    </li>
-                </ul>
-            </article>
-
-            <div class="gap"></div>
-
-            <!-- 나인팩토리 작업물 -->
-            <article>
-                <h2>NINEFACTORY</h2>
-                <ul>
-                    <li>
-                        <div class="work_bar">
-                            <h3 class="fw-500">{ 브랜드 런칭 : 인퓨즈랩 }</h3>
-                            <a href="https://infuse-lab.com/shop/" target="_blank" class="arrow_btn"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#fff"><path d="m256-240-56-56 384-384H240v-80h480v480h-80v-344L256-240Z"/></svg></a>
-                        </div>
-                        <div class="thumb">
-                            <img src="https://ifh.cc/g/Y2Gz79.jpg" alt="인퓨즈랩 썸네일 이미지">
-                            <div class="view">Quick View</div>
-                        </div>
-                    </li>
-
-                    <li>
-                        <div class="work_bar">
-                            <h3 class="fw-500">{ 쇼핑몰 리뉴얼 : 호랑이액상 }</h3>
-                            <a href="https://www.xn--9i2b77oqxdxqc734a.com/" target="_blank" class="arrow_btn"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#fff"><path d="m256-240-56-56 384-384H240v-80h480v480h-80v-344L256-240Z"/></svg></a>
-                        </div>
-                        <div class="thumb">
-                            <img src="https://ifh.cc/g/6RFTdG.png" alt="어플리케이션 다운로드 페이지 썸네일 이미지">
-                            <div class="view">Quick View</div>
-                        </div>
-                    </li>
-
-                    <li>
-                        <div class="work_bar">
-                            <h3 class="fw-500">{ 사이트 리뉴얼 : 슈퍼로그 }</h3>
-                            <a href="http://superlog.co.kr/" target="_blank" class="arrow_btn"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#fff"><path d="m256-240-56-56 384-384H240v-80h480v480h-80v-344L256-240Z"/></svg></a>
-                        </div>
-                        <div class="thumb">
-                            <img src="https://ifh.cc/g/rc5fZ9.png" alt="이용약관 썸네일 이미지">
-                            <div class="view">Quick View</div>
-                        </div>
-                    </li>
-
-                    <li>
-                        <div class="work_bar">
-                            <h3 class="fw-500">{ 코인채굴 : ALEO }</h3>
-                            <a href="https://aleopools.kr/bbs/login" target="_blank" class="arrow_btn"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#fff"><path d="m256-240-56-56 384-384H240v-80h480v480h-80v-344L256-240Z"/></svg></a>
-                        </div>
-                        <div class="thumb">
-                            <img src="https://ifh.cc/g/8NNHjP.png" alt="코인채굴하는 알레오 작업물 썸네일 이미지">
-                            <div class="view">Quick View</div>
-                        </div>
-                    </li>
-
-                    <li>
-                        <div class="work_bar">
-                            <h3 class="fw-500">{ 랜딩페이지 : 레드커머스 }</h3>
-                            <a href="https://land1.redcomm.kr/" target="_blank" class="arrow_btn"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#fff"><path d="m256-240-56-56 384-384H240v-80h480v480h-80v-344L256-240Z"/></svg></a>
-                        </div>
-                        <div class="thumb">
-                            <img src="https://ifh.cc/g/Ldxf6h.png" alt="레드커머스 창업광고 썸네일 이미지">
-                            <div class="view">Quick View</div>
-                        </div>
-                    </li>
-
-                    <li>
-                        <div class="work_bar">
-                            <h3 class="fw-500">{ 사이트 리뉴얼 : 곽민재가모 }</h3>
-                            <a href="https://ilovegabal.net/" target="_blank" class="arrow_btn"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#fff"><path d="m256-240-56-56 384-384H240v-80h480v480h-80v-344L256-240Z"/></svg></a>
-                        </div>
-                        <div class="thumb">
-                            <img src="https://ifh.cc/g/VJASqZ.jpg" alt="곽민재가모 썸네일 이미지">
-                            <div class="view">Quick View</div>
-                        </div>
-                    </li>
-
-                    <li>
-                        <div class="work_bar">
-                            <h3 class="fw-500">{ 사내 e-교육 : 에자이코리아 }</h3>
-                            <a href="http://eisai.ninefactory.kr/es_member/login.php" target="_blank" class="arrow_btn"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#fff"><path d="m256-240-56-56 384-384H240v-80h480v480h-80v-344L256-240Z"/></svg></a>
-                        </div>
-                        <div class="thumb">
-                            <img src="https://ifh.cc/g/bYzqWJ.jpg" alt="에자이코리아 썸네일 이미지">
-                            <div class="view">Quick View</div>
-                        </div>
-                    </li>
-
-                    <li>
-                        <div class="work_bar">
-                            <h3 class="fw-500">{ 사이트 리뉴얼 : 신화종합건설 }</h3>
-                            <a href="http://www.shcon.co.kr/" target="_blank" class="arrow_btn"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#fff"><path d="m256-240-56-56 384-384H240v-80h480v480h-80v-344L256-240Z"/></svg></a>
-                        </div>
-                        <div class="thumb">
-                            <img src="https://ifh.cc/g/5mJhRG.jpg" alt="신화종합건설 썸네일 이미지">
-                            <div class="view">Quick View</div>
-                        </div>
-                    </li>
-                </ul>
-            </article>
-
-            <div class="gap"></div>
-
-            <!-- 개인 작업물 -->
-            <article>
-                <h2>Personal</h2>
-                <ul>
-                    <li>
-                        <div class="work_bar">
-                            <h3 class="fw-500">{ 2024 포트폴리오 }</h3>
-                            <a href="/orange/index.html" target="_blank" class="arrow_btn"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#fff"><path d="m256-240-56-56 384-384H240v-80h480v480h-80v-344L256-240Z"/></svg></a>
-                        </div>
-                        <div class="thumb">
-                            <img src="https://ifh.cc/g/4hjbrq.jpg" alt="오렌지버전 포트폴리오 썸네일 이미지">
-                            <div class="view">Quick View</div>
-                        </div>
-                    </li>
-
-                    <li>
-                        <div class="work_bar">
-                            <h3 class="fw-500">{ 2021 메가박스 클론코딩 }</h3>
-                            <a href="https://catch-an.com/megabox/index.html" target="_blank" class="arrow_btn"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#fff"><path d="m256-240-56-56 384-384H240v-80h480v480h-80v-344L256-240Z"/></svg></a>
-                        </div>
-                        <div class="thumb">
-                            <img src="https://ifh.cc/g/1htYw6.png" alt="어플리케이션 다운로드 페이지 썸네일 이미지">
-                            <div class="view">Quick View</div>
-                        </div>
-                    </li>
-
-                    <li>
-                        <div class="work_bar">
-                            <h3 class="fw-500">{ SVG활용 : 404에러페이지 }</h3>
-                            <a href="https://catch-an.com/error/index.html" target="_blank" class="arrow_btn"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#fff"><path d="m256-240-56-56 384-384H240v-80h480v480h-80v-344L256-240Z"/></svg></a>
-                        </div>
-                        <div class="thumb">
-                            <img src="https://ifh.cc/g/vBPSvs.jpg" alt="404에러 썸네일 이미지">
-                            <div class="view">Quick View</div>
-                        </div>
-                    </li>
-
-                    <li>
-                        <div class="work_bar">
-                            <h3 class="fw-500">{ 통신사 이벤트 페이지 }</h3>
-                            <a href="https://170991143122020.dbcart.net/" target="_blank" class="arrow_btn"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#fff"><path d="m256-240-56-56 384-384H240v-80h480v480h-80v-344L256-240Z"/></svg></a>
-                        </div>
-                        <div class="thumb">
-                            <img src="https://ifh.cc/g/MgWGLY.jpg" alt="통신사 이벤트 썸네일 이미지">
-                            <div class="view">Quick View</div>
-                        </div>
-                    </li>
-                </ul>
-            </article>
-        </section>
-
-        <div class="gap"></div>
-
-        <!-- 썸네일 이미지 작업존 -->
-        <section id="thumb">
-            <h2>Card News</h2>
-            <article>
-                <ul>
-                    <li><img src="" alt=""></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                </ul>
-            </article>
-        </section>
-
-        <div class="gap"></div>
-
-        <!-- footer -->
-        <footer>
-
-        </footer>
-
-        <!-- layer popup -->
-
-        <!-- mouse -->
-        <div class="cursor"></div>
+    <div class="deco-wrap">
+        <p class="gio">MAPO-GU,SEOUL</p>
+        <time class="time">00:00:00</time>
+        <p class="mouse">( X: <span class="x">34</span>px , Y: <span class="y">2302</span>px )</p>
     </div>
+
+    <main class="container">
+        <section class="jn-intro" id="home">
+            <h2 class="blind">인트로</h2>
+            <div class="text-box">
+                <p class="text">I CREATE</p>
+                <p class="text main-text">MEMORABLE</p>
+                <p class="text">BETTER WEB</p>
+                <p class="mini-text">
+                    The goal is to create a platform
+                    that you want to remember and use
+                    for a long time, and to solve more
+                    people's problems through development.
+                </p>
+            </div>
+            <div class="img-box">
+                <img src="assets/images/tree.png" alt>
+            </div>
+            <div class="particle-wrap">
+                <div class="particle particle1">
+                    <img src="assets/images/juice.png" alt>
+                </div>
+                <div class="particle particle2">
+                    <img src="assets/images/orange1.png" alt>
+                </div>
+                <div class="particle particle3">
+                    <img src="assets/images/orange1.png" alt>
+                </div>
+            </div>
+        </section>
+
+        <section class="jn-about" id="about">
+            <h2 class="blind">자기소개</h2>
+            <div class="marquee-banner">
+                <span>ABOUT ME -</span>
+                <span>ABOUT ME -</span>
+                <span>ABOUT ME -</span>
+                <span>ABOUT ME -</span>
+                <span>ABOUT ME -</span>
+                <span>ABOUT ME -</span>
+                <span>ABOUT ME -</span>
+            </div>
+
+            <div class="marquee marquee1">
+                <div class="wrap">
+                    <span>박지안</span>
+                    <span>Park Jian</span>
+                    <span>パク·ジアン</span>
+                    <span class="deco">朴摯晏</span>
+                    <span>công viên</span>
+                    <span>박지안</span>
+                    <span>Park Jian</span>
+                    <span>パク·ジアン</span>
+                    <span class="deco">朴摯晏</span>
+                    <span>công viên</span>
+                </div>
+
+                <div class="wrap">
+                    <span>박지안</span>
+                    <span>Park Jian</span>
+                    <span>パク·ジアン</span>
+                    <span class="deco">朴摯晏</span>
+                    <span>công viên</span>
+                    <span>박지안</span>
+                    <span>Park Jian</span>
+                    <span>パク·ジアン</span>
+                    <span class="deco">朴摯晏</span>
+                    <span>công viên</span>
+                </div>
+            </div>
+
+            <div class="marquee marquee2">
+                <div class="wrap">
+                    <span>CAFE24</span>
+                    <span class="deco">그누보드</span>
+                    <span>영카트</span>
+                    <span class="deco">Bootstrap</span>
+                    <span>CAFE24</span>
+                    <span>그누보드</span>
+                    <span>영카트</span>
+                    <span>Bootstrap</span>
+                </div>
+                <div class="wrap">
+                    <span>CAFE24</span>
+                    <span class="deco">그누보드</span>
+                    <span>영카트</span>
+                    <span class="deco">Bootstrap</span>
+                    <span>CAFE24</span>
+                    <span>그누보드</span>
+                    <span>영카트</span>
+                    <span>Bootstrap</span>
+                </div>
+            </div>
+            <div class="marquee marquee3">
+                <div class="wrap">
+                    <span class="deco">소통하는</span>
+                    <span>긍정적인</span>
+                    <span class="deco">열정적인</span>
+                    <span>끊임없이 도전하는</span>
+                    <span class="deco">문제를 해결하는</span>
+                </div>
+                <div class="wrap">
+                    <span class="deco">소통하는</span>
+                    <span>긍정적인</span>
+                    <span class="deco">열정적인</span>
+                    <span>끊임없이 도전하는</span>
+                    <span class="deco">문제를 해결하는</span>
+                </div>
+            </div>
+            <div class="particle-wrap">
+                <div class="particle particle1">
+                    <img src="assets/images/half_orange.png" alt>
+                </div>
+            </div>
+        </section>
+
+        <section class="jn-work" id="works">
+            <h2 class="headline">WORKS</h2>
+            <ul class="work-list">
+                <li class="work-item">
+                    <a href="https://infuse-lab.com/" data-img="#img1" target="_blank">
+                        <figure class="img-box">
+                            <img src="assets/images/lab.png" alt>
+                        </figure>
+                        <div class="text-box">
+                            <strong class="title">INFUSE'LAB</strong>
+                            <p class="desc">영카트 활용해 제작한 인퓨즈랩 브랜드 쇼핑몰 홈페이지입니다. (웹디자인, 퍼블리싱 100%)</p>
+                            <p class="hash">
+                                <span>#영카트</span>
+                                <span>#쇼핑몰</span>
+                                <span>#반응형</span>
+                                <span>#PC</span>
+                                <span>#Mobile</span>
+                            </p>
+                        </div>
+                    </a>
+                </li>
+            </ul>
+
+            <div class="particle-wrap">
+                <div class="particle">
+                    <img src="/public_html/assets_html/assets/images/orange2.png" alt>
+                </div>
+            </div>
+            <h2 class="headline latest">2021 ~ 2024</h2>
+            <ul class="work-list latest-list">
+                <li class="work-item">
+                    <a href="https://www.xn--9i2b77oqxdxqc734a.com/" target="_blank">
+                        <div class="text-box">
+                            <strong class="title">호랑이액상 <span>(renewal)</span></strong>
+                            <p class="desc">영카트를 활용해 기존에 가지고 있던 불편한 부분들을 모두 개선하고 요청받은 추가 기능을 개발해 반영한 전자담배 쇼핑몰 사이트 입니다. (웹디자인, 퍼블리싱 100%)</p>
+                            <p class="hash">
+                                <span>#영카트</span>
+                                <span>#SEO 검색엔진 최적화</span>
+                                <span>#반응형</span>
+                                <span>#PC</span>
+                                <span>#Mobile</span>
+                                <span>#100% 본인기여</span>
+                            </p>
+                        </div>
+                    </a>
+                </li>
+
+                <li class="work-item">
+                    <a href="/error/index.html" target="_blank">
+                        <div class="text-box">
+                            <strong class="title">404에러</strong>
+                            <p class="desc">한 장의 SVG 파일을 CSS 애니메이션을 이용해 작업을 진행했습니다.</p>
+                            <p class="hash">
+                                <span>#404에러</span>
+                                <span>#SVG이미지</span>
+                                <span>#CSS 애니메이션</span>
+                                <span>#keyframes</span>
+                                <span>#100% 본인기여</span>
+                            </p>
+                        </div>
+                    </a>
+                </li>
+
+                <li class="work-item">
+                    <a href="https://170991143122020.dbcart.net/" target="_blank">
+                        <div class="text-box">
+                            <strong class="title">휴대폰 구매 DB수집</strong>
+                            <p class="desc">유통사의 요청으로 상세이미지 작업 후 DB카트넷을 통해 DB수집할 수 있도록 작업했습니다. (이미지 작업 100%</p>
+                            <p class="hash">
+                                <span>#Mobile</span>
+                                <span>#이미지</span>
+                                <span>#상세이미지</span>
+                                <span>#100% 본인기여</span>
+                            </p>
+                        </div>
+                    </a>
+                </li>
+
+                <li class="work-item">
+                    <a href="/megabox/index.html" target="_blank">
+                        <div class="text-box">
+                            <strong class="title">MEGABOX <span>(renewal)</span></strong>
+                            <p class="desc">메가박스 클론코딩 작업을 진행했습니다. (퍼블리싱 90%)</p>
+                            <p class="hash">
+                                <span>#적응형</span>
+                                <span>#PC</span>
+                                <span>#90% 본인기여</span>
+                                <span>#2021.07</span>
+                            </p>
+                        </div>
+                    </a>
+                </li>
+            </ul>
+            <p class="add">대표적으로 기재한 프로젝트 외에도 650개의 쇼핑몰과 22개의 웹사이트 구축 프로젝트를 작업했습니다.</p>
+        </section>
+    </main>
+
+    <footer class="footer" id="goal">
+        <h2 class="blind">FOOTER</h2>
+        <p class="desc">끊임없이 도전하며 <br> <span>실패를 딛고 더 크게 성장하는</span><br>  IT 전문가가 되겠습니다.</p>
+
+        <small>&copy; 2021. ji-an All Rights Reserved.</small>
+
+        <div class="particle-wrap">
+            <div class="particle particle1">
+                <img src="assets/images/orange5.png" alt>
+            </div>
+            <div class="particle particle2">
+                <img src="assets/images/orange3.png" alt>
+            </div>
+            <div class="particle particle3">
+                <img src="assets/images/orange4.png" alt>
+            </div>
+        </div>
+    </footer>
+    <div class="cursor">
+        <div class="img-box">
+            <div id="img1" class="image">
+                <img src="assets/images/lab.png" alt>
+            </div>
+            <div id="img2" class="image">
+                <img src="assets/images/02.png" alt>
+            </div>
+        </div>
+    </div>
+</div>
 </body>
 </html>
